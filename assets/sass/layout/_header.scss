@@ -1,0 +1,176 @@
+@import "../base/reset";
+@import "../utils/variables";
+@import "../layout/grid";
+@import "../base/typography";
+
+.header__above {
+  border: 1px solid rgba(200, 200, 200, 0.808);
+
+  .container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    gap: 30px;
+
+    &__mail {
+      border-right: 1px solid rgba(200, 200, 200, 0.808);
+      padding-right: 20px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 30px;
+
+    &__icons {
+      display: flex;
+      gap: 24px;
+      border-right: 1px solid rgba(200, 200, 200, 0.808);
+
+      padding-right: 20px;
+    }
+
+    &__lang {
+      border-right: 1px solid rgba(200, 200, 200, 0.808);
+      padding-right: 20px;
+    }
+  }
+}
+
+.header__mid {
+  .container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__search {
+    display: flex;
+    padding: 6px;
+    border: 1px solid rgba(200, 200, 200, 0.808);
+    gap: 10px;
+    align-items: center;
+
+    &__sel {
+      width: 185px;
+      display: flex;
+      gap: 10px;
+      border-right: 1px solid rgba(200, 200, 200, 0.808);
+      padding-right: 10px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    &__inp {
+      border: none;
+      display: flex;
+      position: relative;
+      input {
+        border: none;
+        width: 450px;
+      }
+
+      &__icon {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: $yellow-color;
+        right: -6px;
+        top: -6px;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header__down {
+  background-color: $dark-color;
+
+  &__nav {
+    width: 97%;
+   
+    display: flex;
+    
+
+    ul {
+      display: flex;
+      
+      
+      li {
+        transition: all 0.3s linear;
+        border: 1px solid rgba(200, 200, 200, 0.808);
+        padding: 10px;
+
+        &:hover{
+          cursor: pointer;
+          background-color: $yellow-color;
+        }
+        a {
+          color: white;
+         
+        }
+
+        i {
+          color: white;
+        }
+      }
+
+      .li__own {
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+      }
+
+      .li__all {
+        width: 155px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+
+  &__menu {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    
+    justify-content: flex-end;
+    background-color: $gray-color;
+
+    &__div {
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 40px;
+      background-color: $dark-color;
+      border-radius: 6px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
